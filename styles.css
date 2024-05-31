@@ -16,6 +16,7 @@ body {
    background-image: url(/180123.webp);
    background-repeat: no-repeat;
    background-size: cover;
+   background-attachment: fixed;
 }
 #navbar a{
     color: white;
@@ -68,8 +69,8 @@ body {
 .subscribe-button:hover {
     background: none;
     color: midnightblue;
+    border-bottom: 2px solid midnightblue;
     outline: none;
-    border: none;
 }
 .view-more-button {
     background: none;
@@ -103,8 +104,8 @@ body {
     display: block;
     width: 5px;
     height: 5px;
-    -ms-transform: rotate(45deg); /* IE 9 */
-    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    -ms-transform: rotate(45deg); 
+    -webkit-transform: rotate(45deg); 
     transform: rotate(45deg);
      
     border-right: 2px solid white;
@@ -134,7 +135,6 @@ body {
     -webkit-animation-delay: .1s;
     -moz-animation-delay: .1s;
     -webkit-animation-direction: alternate;
-    
     animation-direction: alternate;
     animation-delay: alternate;
   }
@@ -144,10 +144,8 @@ body {
     -webkit-animation-delay: .2s;
     -moz-animation-delay: .2s;
     -webkit-animation-direction: alternate;
-    
     animation-delay: .2s;
     animation-direction: alternate;
-    
     margin-top: -6px;
   }
   
@@ -156,11 +154,8 @@ body {
     -webkit-animation-delay: .3s;
     -moz-animation-delay: .3s;
     -webkit-animation-direction: alternate;
-    
     animation-delay: .3s;
     animation-direction: alternate;
-    
-    
     margin-top: -6px;
   }
   
@@ -180,7 +175,6 @@ body {
     margin: 5px auto;
     background: white;
     position: relative;
-    
     height: 4px;
     width: 4px;
     border: 2px solid #fff;
@@ -257,3 +251,32 @@ body {
     50%  { opacity: .5; }
     100% { opacity: 1; }
   }
+
+  #card-item-name {
+    color: midnightblue;
+  }
+  #card-body {
+    background: linear-gradient(grey,white) ;
+  }
+  .position-relative {
+    position: relative;
+  }
+  
+  #our-story {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    flex-direction: column;
+    z-index: 10; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px; 
+  }
+  
+  .carousel-inner img {
+    height: 100vh;
+    object-fit: cover;
+    filter: blur(2px);
+
+  }
+  
