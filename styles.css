@@ -276,7 +276,11 @@ body {
   .carousel-inner img {
     height: 100vh;
     object-fit: cover;
-    filter: blur(2px);
-
+    filter: blur(3px);
   }
+
+  /* Shop Styling */
+
+
+
   
